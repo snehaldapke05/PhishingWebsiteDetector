@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phishing Website Detector</title>
+</head>
+<body>
+  <h1>Phishing Website Detector</h1>
+  <form method="post">
+    <label for="url">Website URL</label>
+    <input id="url" type="text" name="url" placeholder="Enter a website URL" required>
+    <button type="submit">Check website</button>
+  </form>
+  {% if result %}
+    <h2>{{ result }}</h2>
+  {% endif %}
+</body>
+</html>  
